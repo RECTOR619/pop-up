@@ -6,101 +6,103 @@
     <meta name="viewport" content="width=device-width">
     <title>step1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c491194143.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="sidebar">
-            <ul>
-                <li><a class="at" href="#">Step 1</a></li><br>
-                <li><a class="as" href="#">Step 2</a></li><br>
-                <li><a class="an" href="#">Step 3</a></li>
-            </ul>
-        </div>
+        <aside>
+            <div class="top">
+                <div class="close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li><a class="at" href="#">Step 1</a></li>
+                    <li><a class="as" href="step2.html">Step 2</a></li>
+                    <li><a class="an" href="step3.html">Step 3</a></li>
+                </ul>
+            </div>
+        </aside>
+
         <div class="main-content">
             <div class="header">Terms and conditions</div>
-
+            <div class="bars"><i class="fa-solid fa-bars"></i></div>
             <form action="/action_page.php" method="get" id="nameform" class="form">
+                <div class="for">
+                    <div class="question-a">
+                        <div>
+                            <label for="">Name of your Company<span id="star">*</span></label>
+                            <input class="input-type" type="text" required placeholder="Chris Gift Ltd">
+                        </div><br>
+                        <div>
+                            <label for="">Website URL<span id="star">*</span></label>
+                            <input class="input-type" type="text" required placeholder="https://">
+                        </div><br>
+                        <div>
+                            <label for="">Country<span id="star">*</span></label><br>
+                            <input class="input-type" type="text" required placeholder="Nigeria">
+                        </div><br>
+                        <div>
+                            <label for="">How can users contact you?</label><br>
+                            <input class="input-type" type="checkbox" name="option1" required>
+                            <span class="checkmark"></span>
+                            <label for="">Email </label><br>
+                            <input class="input-type" type="checkbox" name="option1" required>
+                            <span class="checkmark"></span>
+                            <label for=""> Website  </label>
+                        </div><br>
+                        <div>
+                            <a href="#" class="back" style="color: #111F4D;">Back</a>
+                        </div>
+                    </div>
 
-                <div class="question-a">
-                    <div>
-                        <label for="">Name of your Company<span id="star">*</span></label>
-                        <input class="input-type" type="text" required placeholder="Chris Gift Ltd">
-                    </div><br>
-                    <div>
-                        <label for="">Website URL<span id="star">*</span></label>
-                        <input class="input-type" type="text" required placeholder="https://">
-                    </div><br>
-                    <div>
-                        <label for="">Country<span id="star">*</span></label><br>
-                        <input class="input-type" type="text" required placeholder="Nigeria">
-                    </div><br>
-                    <div>
-                        <label for="">How can users contact you?</label><br>
+                    <!-- Question B -->
 
-                        <input class="input-type" type="checkbox" name="option1" required>
-                        <span class="checkmark"></span>
-                        <label for="">Email </label><br>
+                    <div class="question-b">
+                        <div>
+                            <label for="">Do you collect personal information?<span id="star">*</span></label><br>
+                            <input class="input-type" type="radio" name="option1" required>
+                            <span class="radiomark"></span>
+                            <label for="">Yes </label><br>
+                            <input class="input-type" type="radio" name="option1" required>
+                            <span class="radiomark"></span>
+                            <label for="">No </label>
+                        </div><br>
+                        <div>
+                            <label for="">Can user create Accounts?<span id="star">*</span></label><br>
 
+                            <input class="input-type" type="radio" name="option1" required>
+                            <span class="radiomark"></span>
+                            <label for="">Yes  </label><br>
 
-                        <input class="input-type" type="checkbox" name="option1" required>
-                        <span class="checkmark"></span>
-                        <label for=""> Website  </label>
-                    </div><br>
-                    <div>
-                        <a href="#" class="back" style="color: #111F4D;">Back</a>
+                            <input class="input-type" type="radio" name="option1" required>
+                            <span class="radiomark"></span>
+                            <label for="">No </label>
+                        </div><br>
+                        <div>
+                            <label for="">Does your website use this services?</label><br>
+
+                            <input class="input-type" type="checkbox" name="option1" required>
+                            <span class="checkmark"></span>
+                            <label for="">Camera</label><br>
+
+                            <input class="input-type" type="checkbox" name="option1" required>
+                            <span class="checkmark"></span>
+                            <label for="">Geolocation</label>
+                        </div><br>
+                        <div>
+                            <a href="step2.html" class="continue" style="color: white;">Continue</a></button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Question B -->
-
-                <div class="question-b">
-                    <div>
-                        <label for="">Do you collect personal information?<span id="star">*</span></label><br>
-
-                        <input class="input-type" type="radio" name="option1" required>
-                        <span class="radiomark"></span>
-                        <label for="">Yes </label><br>
-
-                        <input class="input-type" type="radio" name="option1" required>
-                        <span class="radiomark"></span>
-                        <label for="">No </label>
-                    </div><br>
-                    <div>
-                        <label for="">Can user create Accounts?<span id="star">*</span></label><br>
-
-                        <input class="input-type" type="radio" name="option1" required>
-                        <span class="radiomark"></span>
-                        <label for="">Yes  </label><br>
-
-                        <input class="input-type" type="radio" name="option1" required>
-                        <span class="radiomark"></span>
-                        <label for="">No </label>
-                    </div><br>
-                    <div>
-                        <label for="">Does your website use this services?</label><br>
-
-                        <input class="input-type" type="checkbox" name="option1" required>
-                        <span class="checkmark"></span>
-                        <label for="">Camera</label><br>
-
-                        <input class="input-type" type="checkbox" name="option1" required>
-                        <span class="checkmark"></span>
-                        <label for="">Geolocation</label>
-                    </div><br>
-                    <div>
-                        <a href="step2.html" class="continue" style="color: white;">Continue</a></button>
-                    </div>
-                </div>
+            </form>
         </div>
-
-    </div>
     </div>
     </form>
     </div>
     </div>
-
+    <script src="js/app.js"></script>
 </body>
 
 </html>

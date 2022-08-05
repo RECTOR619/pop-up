@@ -20,6 +20,19 @@
     font-size: 20px;
 }
 
+aside {
+    height: auto;
+    margin: 0;
+}
+
+
+.top .close {
+    font-size: 25px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+
 .wrapper .sidebar {
     position: fixed;
     text-align: center;
@@ -85,6 +98,11 @@
     left: 270px;
 }
 
+.for{
+    display: flex;
+    flex-direction: row;
+}
+
 form {
     display: flex;
     padding-left: 180px;
@@ -101,6 +119,17 @@ select {
     border-radius: 7px;
     border: thin solid #80808075;
     font-size: 15px;
+    padding: 20px;
+}
+
+.fo{
+    display: flex;
+    flex-direction: row;
+}
+
+.foo{
+    display: flex;
+    flex-direction: row;
 }
 
 .continue {
@@ -164,24 +193,120 @@ select {
     color: saddlebrown;
 }
 
-@media screen and (max-width:1500px) {
-    .continue {
-        position: relative;
-        font-size: 18px;
-        background-color: #111F4D;
-        border-radius: 7px;
-        text-decoration: none;
-        padding: 7px 35px;
-        margin: 2px 5px;
+
+.bars, .close {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        display: block;
+        
     }
-    .back {
-        position: relative;
-        font-size: 20px;
-        background-color: white;
-        border-radius: 7px;
-        text-decoration: none;
-        border: 2px solid green;
-        padding: 4px 37px;
-        margin: 2px 5px;
+
+    .for{
+        display: grid;
     }
+    
+    .fo{
+        display: grid;
+    }
+    
+    .foo{
+        display: grid;
+    }
+    
+    aside {
+        display: none;
+        position: fixed;
+        z-index: 3;
+        height: auto;
+        margin-top: 0;
+        
+    }
+
+    .wrapper .sidebar {
+        width: 40%;
+        height: 50%;
+    }
+    
+
+    .ad{
+        margin-top: 40px;
+    }
+
+    .bars, .close {
+        display: block;
+    }
+
+    .main-content .header{
+        display: flex;
+    }
+
+   
+    .bars {
+       margin-left: 10px; 
+    }
+
+    .bars i {
+        font-size: 30px;
+    }
+    .wrapper .main-content .header {
+        font-size: 22px;
+        position: relative;
+        left: 90px;
+    }
+   
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        height: 36px;
+        width: 90%;
+        padding: 10px;
+    }
+      
+    form {
+        padding-left: 60px;
+        margin: 10px;
+        line-height: 30px;
+    }
+
+    .wrapper {
+        box-shadow: none;
+    }
+    
+}
+
+
+
+@media screen and (max-width:600px) {
+    
+    .wrapper .main-content .header {
+        font-size: 22px;
+        position: relative;
+        left: 70px;
+    }
+   
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        height: 36px;
+        width: 90%;
+        padding: 10px;
+    }
+      
+    form {
+        padding-left: 70px;
+        margin: 10px;
+        line-height: 30px;
+
+    }
+
+    .wrapper {
+        box-shadow: none;
+    }
+    
 }
